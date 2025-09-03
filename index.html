@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Editor</title>
+    <link rel="stylesheet" href="style.css">
+      <script src="https://kit.fontawesome.com/5376355c25.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <div class="code-editor-container">
+        <div class="code-editor html-editor">
+            <div class="head-editor">
+                <div class="left-head">
+                    <img src="images/html.png" alt="html" width="25px">
+                    <span>HTML</span>
+                </div>
+                <div class="right-head">
+                  <i class="fa-regular fa-copy copy copy1"></i>
+                </div>
+            </div>
+            <textarea class="html-input" spellcheck="false"></textarea>
+        </div>
+        <div class="code-editor css-editor">
+                <div class="head-editor">
+                <div class="left-head">
+                     <img src="images/css.png" width="25px" alt="">
+                    <span>CSS</span>
+                </div>
+                <div class="right-head">
+                    <i class="fa-regular fa-copy copy copy2"></i>
+                </div>
+            </div>
+            <textarea class="css-input" spellcheck="false"></textarea>
+        </div>
+        <div class="code-editor js-editor">
+            <div class="head-editor">
+                <div class="left-head">
+                     <img src="images/js.png" width="25px" alt="">
+                    <span>JS</span>
+                </div>
+                <div class="right-head">
+                    <i class="fa-regular fa-copy copy copy3"></i>
+                </div>
+            </div>
+            <textarea class="js-input" spellcheck="false"></textarea>
+        </div>
+    </div>
+    
+    <div class="output-container">
+        <div class="output-head">
+            <span>OUTPUT</span>
+           <span id="save"> <i class="fa-solid fa-hard-drive"  ></i></span>
+            <span id="full"><i class="fa-solid fa-circle-chevron-up"></i></span>
+        </div>
+        <iframe id="output"></iframe>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
